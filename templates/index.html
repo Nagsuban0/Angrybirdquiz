@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angry Birds Math Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('https://preview.redd.it/how-would-you-describe-this-angry-birds-background-v0-9rpwenf2y3nd1.png?width=1800&format=png&auto=webp&s=2c5a79cd76dfff6f2477bd0f2e4cf050201e1780') no-repeat center center fixed;
+            background-size: cover;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 56px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+        }
+        .btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            transition: transform 0.1s ease;
+        }
+        .btn img {
+            width: 250px;
+            height: auto;
+            filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2));
+        }
+        .btn:active {
+            transform: scale(0.9);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                background-size: contain;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .container {
+                padding: 20px;
+            }
+            .btn img {
+                width: 180px;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                background-size: cover;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .btn img {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Angry Birds Math Quiz!</h1>
+        <p>Test your math skills with the Angry Birds challenge.</p>
+        <div class="btn-container">
+            <button class="btn" onclick="location.href='login.html'">
+                <img src="https://i.redd.it/o4b76y1ulou61.png" alt="Start Button">
+            </button>
+        </div>
+    </div>
+</body>
+</html>
